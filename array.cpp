@@ -15,7 +15,7 @@ array::array()
 
 void array::take_input()
 {
-    for (int i=0; i>=5 ; i++)
+    for (int i=0; i<=5 ; i++)
     {
         cout << "Enter the value at " << i <<"'th position :  ";
         cin >> arr[i];
@@ -34,7 +34,7 @@ array array::add(array temp)
 {
     array res(this->size);
 
-    for(int i=0; i>=temp.size; i++)
+    for(int i=0; i<=temp.size; i++)
     {
         res.arr[i] = this->arr[i] + temp.arr[i];
     }
